@@ -45,21 +45,20 @@ exports.decorateConfig = config => {
       	border: 0;
       }
       .tabs_nav {
-      	background-color: #001f27;
+      	background-color: ${backgroundColor};
       }
       .tab_tab {
         color: ${foregroundColor};
-        background-color: #001f27;
-        border-color: ${borderColor};
+        color: #b3b3b3;
+        background-color: ${backgroundColor};
       }
       .tab_tab:before {
       	border: 0;
       }
       .tab_tab.tab_active {
+        border-color: ${borderColor};
         border: transparent;
         font-weight: bold;
-        color: #b3b3b3;
-        background-color: ${backgroundColor};
       }
       .splitpane_divider {
       	background-color: #002028 !important;
